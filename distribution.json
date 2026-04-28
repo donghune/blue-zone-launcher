@@ -36,6 +36,60 @@
               }
             },
             {
+              "id": "org.ow2.asm:asm:9.9",
+              "name": "ASM",
+              "type": "Library",
+              "artifact": {
+                "size": 126122,
+                "url": "https://maven.fabricmc.net/org/ow2/asm/asm/9.9/asm-9.9.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-analysis:9.9",
+              "name": "ASM Analysis",
+              "type": "Library",
+              "artifact": {
+                "size": 35149,
+                "url": "https://maven.fabricmc.net/org/ow2/asm/asm-analysis/9.9/asm-analysis-9.9.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-commons:9.9",
+              "name": "ASM Commons",
+              "type": "Library",
+              "artifact": {
+                "size": 74348,
+                "url": "https://maven.fabricmc.net/org/ow2/asm/asm-commons/9.9/asm-commons-9.9.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-tree:9.9",
+              "name": "ASM Tree",
+              "type": "Library",
+              "artifact": {
+                "size": 51947,
+                "url": "https://maven.fabricmc.net/org/ow2/asm/asm-tree/9.9/asm-tree-9.9.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-util:9.9",
+              "name": "ASM Util",
+              "type": "Library",
+              "artifact": {
+                "size": 94565,
+                "url": "https://maven.fabricmc.net/org/ow2/asm/asm-util/9.9/asm-util-9.9.jar"
+              }
+            },
+            {
+              "id": "net.fabricmc:sponge-mixin:0.17.0+mixin.0.8.7",
+              "name": "Sponge Mixin",
+              "type": "Library",
+              "artifact": {
+                "size": 1505269,
+                "url": "https://maven.fabricmc.net/net/fabricmc/sponge-mixin/0.17.0+mixin.0.8.7/sponge-mixin-0.17.0+mixin.0.8.7.jar"
+              }
+            },
+            {
               "id": "fabric-loader-0.18.5-1.21.4",
               "name": "Fabric Loader Version Manifest",
               "type": "VersionManifest",
