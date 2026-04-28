@@ -11,7 +11,7 @@
       "address": "221.143.37.50:25565",
       "minecraftVersion": "1.21.4",
       "mainServer": true,
-      "autoconnect": false,
+      "autoconnect": true,
       "javaOptions": {
         "supported": ">=21.x",
         "suggestedMajor": 21

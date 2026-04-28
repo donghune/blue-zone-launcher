@@ -690,13 +690,16 @@ class ProcessBuilder {
         // Resolve the Mojang declared libraries.
         const mojangLibs = this._resolveMojangLibraries(tempNativePath)
 
+        // Resolve the mod loader (Fabric/Forge) declared libraries.
+        const modLoaderLibs = this._resolveModLoaderLibraries()
+
         // Resolve the server declared libraries.
         const servLibs = this._resolveServerLibraries(mods)
 
         // Merge libraries, server libs with the same
         // maven identifier will override the mojang ones.
         // Ex. 1.7.10 forge overrides mojang's guava with newer version.
-        const finalLibs = {...mojangLibs, ...servLibs}
+        const finalLibs = {...mojangLibs, ...modLoaderLibs, ...servLibs}
         cpArgs = cpArgs.concat(Object.values(finalLibs))
 
         this._processClassPathList(cpArgs)
@@ -705,11 +708,48 @@ class ProcessBuilder {
     }
 
     /**
+     * Resolve the libraries declared by the mod loader (Fabric/Forge) version manifest.
+     * These are libraries like ASM, sponge-mixin, etc. that the mod loader needs.
+     *
+     * @returns {{[id: string]: string}} An object containing the paths of each mod loader library.
+     */
+    _resolveModLoaderLibraries(){
+        const libs = {}
+        if(this.modManifest.libraries != null){
+            for(const lib of this.modManifest.libraries){
+                const parts = lib.name.split(':')
+                if(parts.length >= 3){
+                    const group = parts[0]
+                    const artifact = parts[1]
+                    const version = parts[2]
+                    const groupPath = group.replace(/\./g, '/')
+                    const jarName = `${artifact}-${version}.jar`
+                    const jarPath = path.join(this.libPath, groupPath, artifact, version, jarName)
+                    const versionIndependentId = `${group}:${artifact}`
+                    // Download library if missing
+                    if(!fs.existsSync(jarPath) && lib.url){
+                        const url = `${lib.url}${groupPath}/${artifact}/${version}/${jarName}`
+                        logger.info(`Downloading mod loader library: ${lib.name} from ${url}`)
+                        fs.ensureDirSync(path.join(this.libPath, groupPath, artifact, version))
+                        try {
+                            require('child_process').execSync(`curl -sL -o "${jarPath}" "${url}"`)
+                        } catch(e) {
+                            logger.error(`Failed to download ${lib.name}:`, e)
+                        }
+                    }
+                    libs[versionIndependentId] = jarPath
+                }
+            }
+        }
+        return libs
+    }
+
+    /**
      * Resolve the libraries defined by Mojang's version data. This method will also extract
      * native libraries and point to the correct location for its classpath.
-     * 
+     *
      * TODO - clean up function
-     * 
+     *
      * @param {string} tempNativePath The path to store the native libraries.
      * @returns {{[id: string]: string}} An object containing the paths of each library mojang declares.
      */
