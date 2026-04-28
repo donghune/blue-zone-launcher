@@ -6,7 +6,7 @@
       "id": "blue-zone-main",
       "name": "Blue Zone Server",
       "description": "Blue Zone Battle Royale - Fabric 1.21.4",
-      "icon": "https://raw.githubusercontent.com/donghune/blue-zone-launcher/main/app/assets/images/SealCircle.png",
+      "icon": "https://raw.githubusercontent.com/donghune/blue-zone-launcher/master/app/assets/images/SealCircle.png",
       "version": "1.0.0",
       "address": "221.143.37.50:25565",
       "minecraftVersion": "1.21.4",
@@ -22,7 +22,7 @@
           "name": "Fabric Loader",
           "type": "Fabric",
           "artifact": {
-            "size": 1200000,
+            "size": 1959156,
             "url": "https://maven.fabricmc.net/net/fabricmc/fabric-loader/0.18.5/fabric-loader-0.18.5.jar"
           },
           "subModules": [
@@ -31,7 +31,7 @@
               "name": "Intermediary Mappings",
               "type": "Library",
               "artifact": {
-                "size": 5000000,
+                "size": 701826,
                 "url": "https://maven.fabricmc.net/net/fabricmc/intermediary/1.21.4/intermediary-1.21.4.jar"
               }
             },
@@ -40,7 +40,7 @@
               "name": "Fabric Loader Version Manifest",
               "type": "VersionManifest",
               "artifact": {
-                "size": 4000,
+                "size": 2847,
                 "url": "https://raw.githubusercontent.com/donghune/blue-zone-launcher/master/fabric-loader-0.18.5-1.21.4.json"
               }
             }
@@ -51,40 +51,32 @@
           "name": "Fabric API",
           "type": "FabricMod",
           "artifact": {
-            "size": 2500000,
-            "url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/qgfwCoej/fabric-api-0.119.4%2B1.21.4.jar"
+            "size": 2149128,
+            "url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/p96k10UR/fabric-api-0.119.4%2B1.21.4.jar"
           }
         },
         {
-          "id": "net.fabricmc:fabric-language-kotlin:1.13.10+kotlin.2.3.20",
+          "id": "net.fabricmc:fabric-language-kotlin:1.13.11+kotlin.2.3.21",
           "name": "Fabric Language Kotlin",
           "type": "FabricMod",
           "artifact": {
-            "size": 4700000,
-            "url": "https://cdn.modrinth.com/data/Ha28R6CL/versions/nWEXd2jN/fabric-language-kotlin-1.13.10%2Bkotlin.2.3.20.jar"
+            "size": 7813444,
+            "url": "https://cdn.modrinth.com/data/Ha28R6CL/versions/2i87JpYj/fabric-language-kotlin-1.13.11%2Bkotlin.2.3.21.jar"
           }
         },
         {
-          "id": "info.journeymap:journeymap-fabric:1.21.4-6.0.0-beta.44",
+          "id": "info.journeymap:journeymap-fabric:1.21.4-6.0.0-beta.47",
           "name": "JourneyMap",
           "type": "FabricMod",
-          "required": {
-            "value": true,
-            "def": true
-          },
           "artifact": {
-            "size": 12000000,
-            "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/bXxZSnqD/journeymap-fabric-1.21.4-6.0.0-beta.44.jar"
+            "size": 3514383,
+            "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/bjbTbat1/journeymap-fabric-1.21.4-6.0.0-beta.47.jar"
           }
         },
         {
           "id": "kr.donghune:blue-zone-minimap:1.0-SNAPSHOT",
           "name": "Blue Zone Minimap",
           "type": "FabricMod",
-          "required": {
-            "value": true,
-            "def": true
-          },
           "artifact": {
             "size": 21075,
             "MD5": "10a90ac91cc22d499c303607a38466aa",
@@ -95,10 +87,6 @@
           "id": "moe.flashback:flashback:0.37.0-MC1.21.4",
           "name": "Flashback",
           "type": "FabricMod",
-          "required": {
-            "value": true,
-            "def": true
-          },
           "artifact": {
             "size": 210926730,
             "MD5": "1e0d573f16261730fc6c5e1d7d04d66f",
