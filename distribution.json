@@ -34,6 +34,15 @@
                 "size": 5000000,
                 "url": "https://maven.fabricmc.net/net/fabricmc/intermediary/1.21.4/intermediary-1.21.4.jar"
               }
+            },
+            {
+              "id": "fabric-loader-0.18.5-1.21.4",
+              "name": "Fabric Loader Version Manifest",
+              "type": "VersionManifest",
+              "artifact": {
+                "size": 4000,
+                "url": "https://raw.githubusercontent.com/donghune/blue-zone-launcher/master/fabric-loader-0.18.5-1.21.4.json"
+              }
             }
           ]
         },
@@ -94,15 +103,6 @@
             "size": 210926730,
             "MD5": "1e0d573f16261730fc6c5e1d7d04d66f",
             "url": "https://github.com/donghune/blue-zone-launcher/releases/download/v1.0.0/Flashback-0.37.0-for-MC1.21.4.jar"
-          }
-        },
-        {
-          "id": "1.21.4",
-          "name": "Minecraft 1.21.4",
-          "type": "VersionManifest",
-          "artifact": {
-            "size": 0,
-            "url": "https://piston-meta.mojang.com/v1/packages/6bcd730e1d8f2943e2edca48b8ed1e0a03861ed3/1.21.4.json"
           }
         }
       ]
