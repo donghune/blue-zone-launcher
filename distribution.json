@@ -83,6 +83,20 @@
           }
         },
         {
+          "id": "moe.flashback:flashback:0.37.0-MC1.21.4",
+          "name": "Flashback",
+          "type": "FabricMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 210926730,
+            "MD5": "1e0d573f16261730fc6c5e1d7d04d66f",
+            "url": "https://github.com/donghune/blue-zone-launcher/releases/download/v1.0.0/Flashback-0.37.0-for-MC1.21.4.jar"
+          }
+        },
+        {
           "id": "1.21.4",
           "name": "Minecraft 1.21.4",
           "type": "VersionManifest",
