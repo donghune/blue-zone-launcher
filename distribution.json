@@ -8,7 +8,7 @@
       "description": "Blue Zone Battle Royale - Fabric 1.21.4",
       "icon": "https://raw.githubusercontent.com/donghune/blue-zone-launcher/master/app/assets/images/SealCircle.png",
       "version": "1.0.0",
-      "address": "horseking.hxxnivers.com:25575",
+      "address": "horseking.hxxnivers.com:25565",
       "minecraftVersion": "1.21.4",
       "mainServer": true,
       "autoconnect": true,
