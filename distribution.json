@@ -146,6 +146,17 @@
             "MD5": "1e0d573f16261730fc6c5e1d7d04d66f",
             "url": "https://github.com/donghune/blue-zone-launcher/releases/download/v1.0.0/Flashback-0.37.0-for-MC1.21.4.jar"
           }
+        },
+        {
+          "id": "com.complementary:reimagined:r5.7.1",
+          "name": "Complementary Reimagined",
+          "type": "File",
+          "artifact": {
+            "size": 522970,
+            "MD5": "bc5f557bb6844d27e7b7891170544ea9",
+            "path": "shaderpacks/ComplementaryReimagined_r5.7.1.zip",
+            "url": "https://github.com/donghune/blue-zone-launcher/releases/download/v1.3.2/ComplementaryReimagined_r5.7.1.zip"
+          }
         }
       ]
     }
