@@ -166,6 +166,17 @@
           }
         },
         {
+          "id": "optionsshaders.txt",
+          "name": "Default Shader Options",
+          "type": "File",
+          "artifact": {
+            "size": 45,
+            "MD5": "d878c5b9ac47ea359bbe2f5496b16cd3",
+            "path": "optionsshaders.txt",
+            "url": "https://github.com/donghune/blue-zone-launcher/releases/download/v1.3.2/optionsshaders.txt"
+          }
+        },
+        {
           "id": "com.complementary:reimagined:r5.7.1",
           "name": "Complementary Reimagined",
           "type": "File",
